@@ -17,25 +17,16 @@
    crossorigin="anonymous">
 </head>
 <body>
-        <center><h1>Vossen ter Wereld</h1></center>
-   
-        <img src="https://hvv.be/wp-content/uploads/2017/05/Foto-4-Sonja-Olthof.jpg"
-        alt="vos"/>
-<p>De vos is een klein zoogdier dat we op heel veel plaatsen ter wereld terug kunnen vinden.
-Wij kennen hem vooral als een klein, roodharig roofdier dat onze kippen komt stelen 's nachts. 
-Maar er zijn meer vossensoorten dan je zou denken. Lees even mee en laat je verbazen door de varieteit die de vos kent in zowel woonomgeving als voorkomen.</p>
-<h1>vossen ter wereld</h1>
-<p>De vos (Vulpes vulpes) is lid van de hondachtigen. De vos is een van de grootste roofdieren die nog vrij in de Benelux voorkomen. Hij is niet veel groter dan een flinke kat, hoewel hij door zijn lange vacht en dikke staart vooral 's winters bedrieglijk groot lijkt. De vos heeft sterk ontwikkelde oren en neus maar ziet minder scherp.</p>
-   <p></p>
-   <center><h2>Rode Vos</h2></center>
-
-   <img src="https://www.ecotoerisme.eu/wp-content/uploads/2014/06/vos.jpg?swifty=1&ssw=774&sspr=1" alt="Rode Vos">
-
-   <center><h2>Woestijn Vos</h2></center>
-
-   <img src="https://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/A-G/fennec-fox-hole.adapt.945.1.jpg" alt="woestijn vos">
-
-   <p>The fennec fox is the smallest of all the world's foxes, weighing only 2.2 pounds (1 kilogram). 
-      It has enormous ears, measuring 6 inches (15 centimeters), which it appears to have borrowed from a much bigger relative. </p>
+                <div id="app-4">
+                                <ol>
+                                  <li v-for="entry in list">
+                                    <h1>
+                                      {{ entry.naam }}
+                                    </h1>
+                                    <p>{{ entry.beschrijving }}</p>
+                                    <img v-bind:src="entry.img" />
+                                  </li>
+                                </ol>
+                              </div>
 </body>
 </html>
