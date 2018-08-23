@@ -21,12 +21,12 @@
                                 <ol>
                                   <li v-for="entry in list">
                                     <h1>
-                                      {{ entry.naam }}
+                                      {{ entry.Kenmerken }}
                                     </h1>
+                                    <p>{{ entry.Voeden }}</p>
+                                    <p>{{ entry.naam }}</p>
                                     <p>{{ entry.beschrijving }}</p>
                                     <p>{{ entry.img }}</p>
-                                    <p>{{ entry.loc}}</p>
-
 
                                     <img v-bind:src="entry.img" />
                                   </li>
