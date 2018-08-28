@@ -1,10 +1,10 @@
 
 workers = [
-    { name: "paul", alive: true, salary: 5000 },
-    { name: "rob", alive: false, salary: 3000 },
-    { name: "anton", alive: false, salary: 5000 },
-    { name: "steven", alive: true, salary: 2000 },
-    { name: "tom", alive: true, salary: 10000 },
+    { name: "paul", alive: true, salary: 5000, password: jjjj, retype:jjjj},
+    { name: "rob", alive: false, salary: 3000, password: kkkk, retype:kkkk},
+    { name: "anton", alive: false, salary: 5000,password: llll,retype:llll },
+    { name: "steven", alive: true, salary: 2000,password: aaaa,retype:aaaa },
+    { name: "tom", alive: true, salary: 10000, password: pppp, retype:pppp },
    ]
    
    // send a card to every dead workers family
@@ -35,3 +35,14 @@ workers = [
    
    sendCards(workers)
    console.log(loonkost(workers))
+
+   function validatePassword(password, retype) {
+
+    if (password == "")
+     return false
+
+    if (retype )
+     console.log(validatePassword("","")
+(""))
+console.log ( validatiePasswoord ("true", "") )
+   }
