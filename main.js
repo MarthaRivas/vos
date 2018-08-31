@@ -1,19 +1,49 @@
 function renderVos(vos) {
-  // document.createElement gebruiken om een element aan te maken
-  // dat elemt return
+  var div = document.createElement('div')
+  var h1 = document.createElement('h1')
+  var h2  = document.createElement('h2')
+  var p = document.createElement('p')
+  var p2 = document.createElement('p')
+  var img = document.createElement('IMG')
+
+  div.appendChild(h1)
+  div.appendChild(h2)
+  div.appendChild(p)
+  div.appendChild(p2)
+  div.appendChild(img)
+ 
+
+  var naam = document.createTextNode(vos.naam)
+  h1.appendChild(naam)
+
+  var soort = document.createTextNode(vos.soort)
+  h2.appendChild(soort)
+
+  var Kenmerken = document.createTextNode(vos.Kenmerken)
+  p.appendChild(Kenmerken)
+
+  var Voeden = document.createTextNode(vos.Voeden)
+  p2.appendChild(Voeden)
+
+  var img = document.cre
+
+  return div
 }
 
 function renderVossen(vossen) {
-  // document.createElement gebruiken om een element aan te maken
-  // dat elemt return
-  var elem = document.createElement('')
-  return elem
+  var div = document.createElement('div')
+  for (var i = 0; i < vossen.length; i = i + 1) {
+    var vos = vossen[i]
+    var component = renderVos(vos)
+    div.appendChild(component)
+  }
+  return div
 }
 
 function init() {
     Tabletop.init({
         key: 'https://docs.google.com/spreadsheets/d/1M7NapQMWRXoc_3RsvkK-egsFvCk3UaCsv7mXvvjSdaw/pubhtml',
-      callback: function (tabletopData, tabletop) {
+      callback: function(tabletopData, tabletop) {
         console.log(tabletopData)
 
         var elem = renderVossen(tabletopData)
