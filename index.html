@@ -9,7 +9,6 @@
  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 
  <script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.2/tabletop.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
  <script src="main.js"></script>
 
 
@@ -17,23 +16,5 @@
    crossorigin="anonymous">
 </head>
 <body>
-  tyest
-                <div id="app-4">
-                                <ol>
-                                  <li v-for="entry in list">
-                                    <h1>
-                                      {{ entry.Kenmerken }}
-                                    </h1>
-                                    <p>{{ entry.Voeden }}</p>
-                                    <p>{{ entry.naam }}</p>
-                                    <p>{{ entry.beschrijving }}</p>
-                                    <p>{{ entry.img }}</p>
-                                    <p>{{ entry.soort}}</p>
-
-                                    <img v-bind:src="entry.img" />
-                                  </li>
-                                </ol>
-                              </div>
-                              
 </body>
 </html>
