@@ -10,8 +10,9 @@ function renderVos(vos) {
   div.appendChild(h2)
   div.appendChild(p)
   div.appendChild(p2)
+  div.src (img)
  
- 
+  
 
   var naam = document.createTextNode(vos.naam)
   h1.appendChild(naam)
@@ -25,7 +26,9 @@ function renderVos(vos) {
   var Voeden = document.createTextNode(vos.Voeden)
   p2.appendChild(Voeden)
 
-  var img = document.cre
+  var img = document.createAttribute()
+  img.src(img)
+ 
 
   return div
 }
@@ -44,7 +47,8 @@ function init() {
     Tabletop.init({
         key: 'https://docs.google.com/spreadsheets/d/1M7NapQMWRXoc_3RsvkK-egsFvCk3UaCsv7mXvvjSdaw/pubhtml',
       callback: function(tabletopData, tabletop) {
-        console.log(tabletopData)
+        console.log(tabletopData, tabletop)
+      
 
         var elem = renderVossen(tabletopData)
         document.body.appendChild(elem)
