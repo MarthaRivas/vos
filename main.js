@@ -10,7 +10,7 @@ function renderVos(vos) {
   div.appendChild(h2)
   div.appendChild(p)
   div.appendChild(p2)
-  div.appendChild(img)
+ 
  
 
   var naam = document.createTextNode(vos.naam)
