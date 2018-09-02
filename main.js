@@ -4,13 +4,13 @@ function renderVos(vos) {
   var h2  = document.createElement('h2')
   var p = document.createElement('p')
   var p2 = document.createElement('p')
-  var img = document.createElement('IMG')
+  
 
   div.appendChild(h1)
   div.appendChild(h2)
   div.appendChild(p)
   div.appendChild(p2)
-  div.src (img)
+ 
  
   
 
@@ -25,9 +25,6 @@ function renderVos(vos) {
 
   var Voeden = document.createTextNode(vos.Voeden)
   p2.appendChild(Voeden)
-
-  var img = document.createAttribute()
-  img.src(img)
  
 
   return div
