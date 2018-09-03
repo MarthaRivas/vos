@@ -1,6 +1,8 @@
 
 
 
+
+
 function renderVos(vos) {
   var div = document.createElement('div')
   var h1 = document.createElement('h1')
@@ -46,6 +48,19 @@ function renderVossen(vossen) {
   return div
 }
 
+function elem(p){return document.createElement (p)
+
+}
+
+function text (beschrijving) {
+  return document.createTextNode (vos.beschrijving)
+}
+
+function append (beschrijving) {
+return document.childNodes (beschrijving)
+}
+
+console.log (append)
 function init() {
     Tabletop.init({
         key: 'https://docs.google.com/spreadsheets/d/1M7NapQMWRXoc_3RsvkK-egsFvCk3UaCsv7mXvvjSdaw/pubhtml',
