@@ -1,16 +1,22 @@
+
+
+
 function renderVos(vos) {
   var div = document.createElement('div')
   var h1 = document.createElement('h1')
   var h2  = document.createElement('h2')
   var p = document.createElement('p')
   var p2 = document.createElement('p')
-  
+
+  var img = document.createElement('img')
+  img.src = vos.img
 
   div.appendChild(h1)
+  div.appendChild(img)
   div.appendChild(h2)
   div.appendChild(p)
   div.appendChild(p2)
- 
+  
  
   
 
