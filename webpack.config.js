@@ -10,6 +10,8 @@ module.exports = {
     filename: 'index_bundle.js'
   },
 
+  externals: ['tls', 'net', 'fs'],
+
   plugins: [
     // Generates default index.html
     new HtmlWebpackPlugin()
