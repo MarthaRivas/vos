@@ -1,7 +1,11 @@
+var crel = require ('crel')
+
 function renderVos(vossen){
     return crel ( 'div',
-    
-    renderVossen(vossen),
+
+  
     
 )
 }
+//renderHeader (navigator),
+//renderVossen(vossen),
