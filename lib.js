@@ -1,4 +1,5 @@
 function text(content) {
+  var div = createElement (div)
     return document.createTextNode(content)
   }
   
