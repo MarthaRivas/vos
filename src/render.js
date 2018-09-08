@@ -26,7 +26,7 @@ function renderHeader(Navigator) {
 
 )
 }
-module.exports = renderArticles
+module.exports = renderVossen
   
 
 
