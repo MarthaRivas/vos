@@ -1,32 +1,21 @@
 var crel = require('crel')
 
-function renderArticle(article) {
+function renderVos(vos) {
  return crel('div',
-   crel('h1', article.title),
-   crel('p', article.content)
+   crel('h1', vos.title),
+   crel('p', vos.content),
+   crel('img',vos.img)
  )
 }
 
-function renderArticles(articles) {
+function renderVossen(vossen) {
  return crel('div',
-   articles.map(renderArticle))
+   vossen.map(renderVos))
 }
 
-function renderPage (articles){
-    return crel ('div',
-renderHeader (Navigator),
-renderArticles (vossen),
-renderFooter ())
-}
-function renderHeader(Navigator) {
-    return crel ( 'ul', 'img',
-    crel('li',Navigator.link),
-    crel('src',Navigator.imag )
-    
 
-)
-}
-module.exports = renderVossen
+
+module.exports = renderVossen 
   
 
 

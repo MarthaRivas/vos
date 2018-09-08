@@ -8,7 +8,11 @@ tabletop.init({
         console.log(tabletopData, tabletop)
       
 
-        var elem = renderVossen(tabletopData)
+        var elem = renderVossen (tabletop)
+        console.log (elem)
+        
+        
+      
         document.body.appendChild(elem)
       },
       simpleSheet: true
