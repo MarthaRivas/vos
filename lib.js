@@ -3,7 +3,7 @@ function text(content) {
     return document.createTextNode(content)
   }
   
-  // console.log(text('test'))
+ console.log(text('test'))
   
   function elem(tag) {
     return document.createElement(tag)
