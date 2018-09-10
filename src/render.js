@@ -1,11 +1,14 @@
 var crel = require('crel')
 
-function renderHeader (navigator) {
-  console.log (navigator)
-  return crel ('div',
-  crel ('img', src="vossensoorten-over-de-hele-wereld-1478798209.jpg" )
-  )
-}
+function renderHeader() {
+  return crel('h1', 'Wereld Vossen')
+ }
+
+ function renderFooter() {
+  return crel('address', 'Martha')
+ }
+  
+
 
 
 function renderVos(vos) {
@@ -27,11 +30,17 @@ function renderVossen(vossen) {
  vossen.map(renderVos))
  
 }
+function renderApp(vossen) {
+  return crel('div',
+    renderHeader(),
+    renderVossen(vossen),
+    renderFooter())
+ }
 
 
 
 
-module.exports = renderVossen
+module.exports = renderApp
   
 
 
