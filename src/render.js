@@ -3,25 +3,18 @@ var crel = require('crel')
 function renderHeader() {
   return crel('div', 
   crel ('img',{src: "image/vosblik.jpg" }),
-  crel ('nav',
-  crel('ul',
-  crel ('li',
-  crel ('a', {hrfe: "https://video.nationalgeographic.com/video/141003-swift-foxes"} ,'home' ),
-  crel ('li',
-  crel ('a', {hrfe: "https://nl.wikipedia.org/wiki/Vos_(dier)#/media/File:Wiki-Vulpes_vulpes.png"},'Wereldkaart van Vossen'))
-  ) 
+    crel ('nav',
+      crel('ul',
+        crel ('li',
+          crel ('a', {href: "https://video.nationalgeographic.com/video/141003-swift-foxes"} ,'home' )),
+        crel ('li',
+          crel ('a', {hrfe: "https://nl.wikipedia.org/wiki/Vos_(dier)#/media/File:Wiki-Vulpes_vulpes.png"},'Wereldkaart van Vossen'))
+    )
   )
   )
-  )
-
+ 
   }
-  function renderNavegator (nav){
-var component = crel ('li')  
-    var button = crel ('button',home)
-    
-
-  }
-
+  
   
 
  function renderFooter() {
@@ -53,7 +46,7 @@ function renderVossen(vossen) {
 function renderApp(vossen) {
   return crel('div',
     renderHeader(),
-    renderNavegator(nav),
+    //renderNavegator(nav),
     renderVossen(vossen),
     renderFooter())
  }
