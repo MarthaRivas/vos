@@ -16,7 +16,9 @@ function renderHeader() {
 
   }
   function renderNavegator (nav){
-
+var component = crel ('li')  
+    var button = crel ('button',home)
+    
 
   }
 
@@ -51,6 +53,7 @@ function renderVossen(vossen) {
 function renderApp(vossen) {
   return crel('div',
     renderHeader(),
+    renderNavegator(nav),
     renderVossen(vossen),
     renderFooter())
  }
