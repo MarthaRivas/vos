@@ -2,8 +2,25 @@ var crel = require('crel')
 
 function renderHeader() {
   return crel('div', 
-  crel ('img',{src: "image/vosblik.jpg" } ))
- }
+  crel ('img',{src: "image/vosblik.jpg" }),
+  crel ('nav',
+  crel('ul',
+  crel ('li',
+  crel ('a', {hrfe: "https://video.nationalgeographic.com/video/141003-swift-foxes"} ,'home' ),
+  crel ('li',
+  crel ('a', {hrfe: "https://nl.wikipedia.org/wiki/Vos_(dier)#/media/File:Wiki-Vulpes_vulpes.png"},'Wereldkaart van Vossen'))
+  ) 
+  )
+  )
+  )
+
+  }
+  function renderNavegator (nav){
+
+
+  }
+
+  
 
  function renderFooter() {
   return crel('address', 'Martha')
