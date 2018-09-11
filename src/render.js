@@ -1,7 +1,8 @@
 var crel = require('crel')
 
 function renderHeader() {
-  return crel('h1', 'Wereld Vossen')
+  return crel('div', 
+  crel ('img',{src: "image/vosblik.jpg" } ))
  }
 
  function renderFooter() {
